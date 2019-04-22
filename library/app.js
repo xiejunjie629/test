@@ -9,6 +9,16 @@ var usersRouter = require('./routes/users');
 var coolRouter = require('./routes/cool');
 
 var app = express();
+// const mongoose = require('mongoose');
+// const mongoDB = '在此插入数据库_URL';
+// mongoose.connect(mongoDB);
+// mongoose.Promise = global.Promise;
+// const db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'MongoDB 连接错误：'));
+const mongoose = require('mongoose');
+const mongoDB = '';
+mongoose.connect(mongoDB);
+m
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
